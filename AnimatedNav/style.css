@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+  background-color: #eafbff;
+  background-image: linear-gradient(
+    to bottom,
+    #eafbff 0%,
+    #eafbff 50%,
+    #5290f9 50%,
+    #5290f9 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubuntu";
+  overflow: hidden;
+  height: 100vh;
+}
+
+nav{
+    background-color: #fff;
+    padding: 2rem ;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,0.5);
+    transition: all .6s linear;
+}
+
+nav.active{
+    width: 35rem;
+}
+
+nav ul{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 0;
+    list-style: none;
+    transition: all .6s linear;
+}
+
+nav.active ul {
+    width: 100%;
+}
+
+nav ul li{
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: all .6s linear ;
+
+}
+
+
+nav.active ul li{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+nav ul a{
+    font-size: 1.2rem;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 1rem;
+
+
+}
+
+.icon{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+}
+
+.icon .line{
+    background-color: #5290f9;
+    height: .2rem;
+    position: absolute;
+    width: 2rem;
+    top: 1rem;
+    left: .5rem; 
+    transition: all .6s linear;
+}
+
+.icon .line2{
+    top: auto;
+    bottom: 1rem;
+}
+
+nav.active .icon .line1{
+    transform:  rotate(-765deg) translateY(.5rem);
+
+
+}
+nav.active .icon .line2{
+    transform:  rotate(765deg) translateY(-.5rem);
+
+
+}

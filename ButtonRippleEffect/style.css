@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background:linear-gradient(150deg, rgb(13, 221, 176) , rgb(8, 228, 235) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+
+}
+
+button{
+
+    background: transparent;
+    font-style: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 1.3rem 4rem;
+    border-radius: .7rem;
+    border: none;
+    border: .2rem solid #fff;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+button .circle{
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: #fff;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    animation: scale .5s ease-out;
+    
+}
+
+@keyframes scale {
+ 
+    to{ 
+        transform: translate(-50% , -50%) scale(3);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+  
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  body{
+    font-family: 'ubuntu';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .bg{
+    background: url('Image/undraw_personalization_triu.svg');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw ;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+  }
+
+  .loading-text{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-35% , -50%);
+    font-size: 2rem;
+    color: #fff;
+  }

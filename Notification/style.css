@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rebeccapurple;
+      
+}
+
+.btn{
+    background-color: #fff;
+    color: rebeccapurple;
+    font-family: 'ubuntu';
+    font-weight: bold;
+    padding: 1.7rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    border-radius: 5rem;
+}
+
+.btn:active{
+    transform: scale(.98);
+}
+
+#toasts{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.toast{
+    background-color: #fff;
+    border-radius: .6rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem; 
+    text-align: left;
+}
+
+.toast.info{
+    color: rebeccapurple;
+    
+}
+.toast.success{
+    color: green;
+    
+}
+.toast.error{
+    color: red;  
+}
